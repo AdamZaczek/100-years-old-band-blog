@@ -1,0 +1,9 @@
+<%= form_for @post do |f| %>
+    <%= f.label :nazwa %> </br>
+    <%= f.text_field :title %> </br>
+
+    <%= f.label :tekst %> </br>
+    <%= f.text_field :body %> </br>
+
+    <%= f.submit "Edytuj post" %>
+<% end %>

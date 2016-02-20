@@ -1,0 +1,9 @@
+<%= form_for @post do |f| %>
+<%= f.label :nazwa %> </br>
+<%= f.text_field :title, placeholder: "Wpisz nazwę posta"  %> </br>
+
+<%= f.label :tekst %> </br>
+<%= f.text_field :body, placeholder: "Wpisz treść posta" %> </br>
+
+<%= f.submit "Utwórz post" %>
+<% end %>
