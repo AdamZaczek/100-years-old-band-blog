@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update, :destroy]
-  http_basic_authenticate_with name: "x", password: "x", except: [:index, :show]
+  http_basic_authenticate_with name: 'x', password: 'x', except: [:index, :show]
   
   def new
     @post = Post.new

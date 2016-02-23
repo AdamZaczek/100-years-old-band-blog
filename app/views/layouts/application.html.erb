@@ -7,8 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  				<%= image_tag "band.jpg", class: "img" %>
+  <nav>
+    <div class="container">
+  <div class="nav masthead-nav">
+    <%= link_to 'Strona główna', landing_path, class: "btn btn-success" %></li>
+    <%= link_to "Aktualności", posts_path, class: "btn btn-success" %></li>
+    <%= link_to "Galeria", '#', class: "btn btn-success" %></li>
+    <%= link_to "Skład zespołu", '#', class: "btn btn-success" %></li>
+    <%= link_to "Dołącz do nas!", '#', class: "btn btn-success" %></li>
+    <%= link_to "Kontakt", '#', class: "btn btn-success" %></li>
+    </div>
+  </nav>
+  </div>
+  <%= yield %>
 </body>
 </html>
