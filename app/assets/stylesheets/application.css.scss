@@ -6,10 +6,15 @@
  */
 
 /* Links */
+
+html {
+ background-color: #FFFFEE;
+}
+
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #CC0033;
 }
 
 /* Custom default button */
@@ -23,11 +28,15 @@ a:hover {
 }
 
 h1 {
-    color: #4d0000;
+    color: #CC0033;
 }
 
 p {
     color: #000;
+}
+
+h1:hover { 
+    color: #CC0033;
 }
 
 h1 {
@@ -36,15 +45,13 @@ h1 {
 
 .container {
     width: 750px;
-    height: 70%;
+    height: 80%;
     display: center;
 }
-
 
 textarea {
     color: #000000;
 }
-
 
 #header {
 	padding: 1em 3em;
@@ -66,20 +73,82 @@ textarea {
 }
 
 body {
-	background-color: #eee;
-	width: 760px;
-	   border: 5px solid rgba(0, 0, 0, 0.3);
-}
-
-a {
-	color: #222;
-	text-decoration: none;
-		}
-		
-.btn-success {
-  background-color: #990000;
-  border-color: #220000;
 }
 
 img {
+  padding: 0 10px 0 10px;
+}
+
+.header {
+  background-color: #fff;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 750px;
+  position: relative;
+  left: 10px;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.footer {
+  border: 1px solid #550000;
+}
+
+.body-wrapper {
+  width: 780px;
+	position: center;
+    font-family: "Verdana", Geneva, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Cardo','Geneva';
+	padding-bottom: 20px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h2 a:hover {
+	text-decoration: none;
+}
+
+.gallery {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topmenu {
+    border-top: 1px solid #d6dce0;;
+    border-bottom: 1px solid #d6dce0;;
+    font-family: 'Cardo';
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
+}
+
+a {
+    height: 14px;
+    display: inline-block;
+    color: #89241F;
+    margin: 6px;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
 }

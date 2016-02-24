@@ -14,4 +14,7 @@ class BandController < ApplicationController
     
     def story
     end
+    
+    def join
+    end
 end

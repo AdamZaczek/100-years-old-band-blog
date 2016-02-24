@@ -27,6 +27,10 @@ class PostsController < ApplicationController
    # @post = Post.find(params[:id])
   end
   
+  def admin
+    @posts = Post.all
+  end
+  
   def update
     if @post.update_attributes(allowed_params)
       redirect_to posts_path
