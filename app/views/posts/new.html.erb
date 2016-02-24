@@ -1,11 +1,11 @@
 <div class="container">
 <%= form_for @post do |f| %>
-<%= f.label :nazwa %> </br>
-<%= f.text_field :title, placeholder: "Wpisz nazwę posta" %> </br>
+    <%= f.label :nazwa %> </br>
+    <%= f.text_area(:title, cols: 60, class: "textarea") %> </br>
 
-<%= f.label :tekst %> </br>
-<%= f.text_field :body, placeholder: "Wpisz treść posta", :cols => "10", :rows => "20" %> </br>
+    <%= f.label :tekst %> </br>
+    <%= f.text_area(:body, cols: 60, rows: 15, class: "textarea") %> </br>
 
-<%= f.submit "Utwórz post" %>
+    <%= f.submit "Utwórz post", class: "btn btn-success" %>
 <% end %>
 </div>
