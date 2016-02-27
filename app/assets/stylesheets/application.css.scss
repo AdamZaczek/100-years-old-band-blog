@@ -31,6 +31,11 @@ h1 {
     color: #CC0033;
 }
 
+.h1 {
+    color: #CC0033;
+    font-family: 'Cardo','Geneva';
+}
+
 p {
     color: #000;
 }
@@ -152,13 +157,6 @@ h1, .h1, h2, .h2, h3, .h3 {
     position: absolute; 
 }
 
-.img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
 .images {
     background-image: asset_url("underpic.jpg");
     background-repeat: no-repeat;
@@ -175,4 +173,10 @@ border-top-color: #683501
 
 .title {
     display: inline-block;
+}
+
+#img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

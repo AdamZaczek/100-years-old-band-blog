@@ -1,50 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Orkiestra OSP Kurowice</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
+    <head>
+          <title>Orkiestra OSP Kurowice</title>
+          <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+          <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+          <%= csrf_meta_tags %>
+    </head>
 <body>
-   <div class="row">
-    <div class="col-xs-0 col-md-2"></div>
-  <div class='title col-xs-12 col-md-4'>
-  <h1 style="padding: 0px">Orkiestra OSP Kurowice</h1>
-  </div>
-        <div class="topmenu col-xs-12 col-md-4">
-    <%= link_to 'Strona główna', landing_path %></li>
-    <%= link_to "Aktualności  ", posts_path %></li>
-    <%= link_to "Galeria  ", gallery_path %></li>
-    <%= link_to "Skład zespołu  ", members_path %></li>
-    <%= link_to "Dołącz do nas  !", join_path %></li>
-    <%= link_to "Kontakt", contact_path %></li>
-    </div>
-    </div>
+    <%= render '/layouts/nav' %>
     <div class="images">
-  				<%= image_tag "band.jpg", class: "img" %>
-  				</div>
-  				<div class="row">
-  				    <div class="col-xs-0 col-md-2"></div>
-  <div class='title col-xs-12 col-md-8'>
-  				  <div class="body-wrapper">
-  <%= yield %>
-  </div>
-<div class="col-xs-0 col-md-2"></div>
-</div>
-</div>
-<div class="row">
-  <div class="col-xs-0 col-md-2"></div>
-   <div class='title col-xs-12 col-md-8'>
-  <div class="footer">
-        <p style="margin: 10px">Nam strzelać nie kazano. - Wstąpiłem na działo
-I spójrzałem na pole; dwieście armat grzmiało.</p>
-<p style="margin: 10px">Artyleryi ruskiej ciągną się szeregi,
-Prosto, długo, daleko, jako morza brzegi;</p>
-    <strong><%= link_to "Zarządaj stroną", admin_path %></strong>
+  		<%= image_tag "band.jpg", id: "img" %>
+ 	</div>
+  	<div class="row">
+  	    <div class="col-xs-0 col-md-2"></div>
+        <div class='title col-xs-12 col-md-8'>
+  		    <div class="body-wrapper">
+                <%= yield %>
+            </div>
+            <div class="col-xs-0 col-md-2"></div>
+        </div>
     </div>
-    </div>
-    </div>
-<div class="col-xs-0 col-md-2"></div>
+    <%= render 'layouts/footer' %>
 </body>
 </html>
