@@ -72,8 +72,6 @@ textarea {
     overflow: auto;
 }
 
-body {
-}
 
 img {
   padding: 0 10px 0 10px;
@@ -88,28 +86,24 @@ img {
   left: 10px;
 }
 
-html {
-    display: table;
-    margin: auto;
-}
-
-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.footer {
-  border: 1px solid #550000;
-}
 
 .body-wrapper {
-  width: 780px;
+    display: table-cell;
+    vertical-align: middle;
+        display: table;
+    margin: auto;
+      width: 780px;
 	position: center;
     font-family: "Verdana", Geneva, sans-serif;
     font-size: 12px;
     line-height: 18px;
     color: #333333;
 }
+
+.footer {
+  border: 1px solid #550000;
+}
+
 
 h1, h2, h3, h4, h5 {
 	font-family: 'Cardo','Geneva';
@@ -138,6 +132,7 @@ h2 a:hover {
     font-size: 14px;
     text-transform: uppercase;
     padding-bottom: 20px;
+    text-align: center
 
 }
 
@@ -151,4 +146,23 @@ a {
 h1, .h1, h2, .h2, h3, .h3 {
     margin-top: 10px;
     margin-bottom: 5px;
+}
+
+.underimg {
+    position: absolute no-repeat scroll center top transparent;
+    position: absolute; 
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.images {
+    background-image: url("underpic.jpg");
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
 }
