@@ -1,5 +1,4 @@
-<div class="container">
-<%= link_to 'Utwórz Post', new_post_path, class: "h2" %>
+<%= link_to 'Utwórz Post', new_post_path, class: "h2 glyphicon glyphicon-pencil" %>
 <% @posts.each do |post| %>
     <p>
        <h2>Tytuł: <%= link_to post.title, post_path(post) %></h2>  </br>
@@ -7,4 +6,3 @@
        <%= link_to 'Edytuj', edit_post_path(post) %> |
        <%= link_to 'Usuń', post, method: :delete, data: { confirm:"You are about to destroy this post, are you sure?" }  %> |
 <% end %>
-</div>

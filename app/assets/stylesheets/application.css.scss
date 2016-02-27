@@ -44,7 +44,6 @@ h1 {
 }
 
 .container {
-    width: 750px;
     height: 80%;
     display: center;
 }
@@ -139,8 +138,8 @@ h2 a:hover {
 a {
     height: 14px;
     display: inline-block;
-    color: #89241F;
-    margin: 6px;
+    color: #E80000;
+    margin: 10px;
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
@@ -172,4 +171,8 @@ border-bottom-color: #683501;
 border-top-style: solid;
 border-top-width: 1px;
 border-top-color: #683501
+}
+
+.title {
+    display: inline-block;
 }
