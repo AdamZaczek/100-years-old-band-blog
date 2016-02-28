@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   
   root 'band#landing'
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
   
   
   get 'landing' => 'band#landing', :as => :landing
