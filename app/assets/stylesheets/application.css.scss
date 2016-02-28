@@ -11,10 +11,13 @@ html {
  background-color: #FFFFEE;
 }
 
-a,
+a {
+  color: #cc4444
+}
+
 a:focus,
 a:hover {
-  color: #CC0033;
+  color: #ee5555
 }
 
 /* Custom default button */
@@ -28,19 +31,11 @@ a:hover {
 }
 
 h1 {
-    color: #CC0033;
+    color: #FF3300;
 }
 
 .h1 {
-    font-family: times, Times New Roman, times-roman, georgia, serif;
-	color: #c00;
-	margin: 0;
-	padding: 0px 0px 6px 0px;
-	font-size: 51px;
-	line-height: 44px;
-	letter-spacing: -2px;
-	font-weight: bold;
-}
+	color: #c00;;font-family: 'Bitter', serif; font-size: 50px; font-weight: normal; line-height: 54px; margin: 0 0 54px; }
 
 p {
     color: #000;
