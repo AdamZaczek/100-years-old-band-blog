@@ -2,10 +2,13 @@
 @import "bootstrap";
 
 /*
- * Globals
- */
+*= require normalize-rails
+*= require_self
+*= require_tree .
 
-/* Links */
+ */
+ 
+@import 'normalize';
 
 html {
  background-color: #FFFFEE;
@@ -50,7 +53,6 @@ h1 {
 }
 
 .container {
-    height: 80%;
     display: center;
 }
 
@@ -59,7 +61,7 @@ textarea {
 }
 
 #header {
-	padding: 1em 3em;
+	padding: 2em 3em;
 	border-bottom: 1px solid #d6dce0;
 	background: #444444;
 	color: #9eafba;
@@ -82,14 +84,6 @@ img {
   padding: 0 10px 0 10px;
 }
 
-.header {
-  background-color: #fff;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  width: 750px;
-  position: relative;
-  left: 10px;
-}
 
 
 .body-wrapper {
@@ -130,15 +124,14 @@ h2 a:hover {
 }
 
 .topmenu {
-    border-top: 1px solid #d6dce0;;
-    border-bottom: 1px solid #d6dce0;;
     font-family: 'Cardo';
-    font-weight: 600;
+    font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
-    padding-bottom: 20px;
-    text-align: center
-
+    text-align: center;
+    padding-bottom: 8px;
+        min-height: 180px;
+        position: relative;
 }
 
 a {
@@ -180,4 +173,31 @@ border-top-color: #683501
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+.comment-container {
+    display: center;
+    border-top: 1px solid;
+    border-top: 1px solid;
+          width: 780px;
+}
+
+.face {
+        position: absolute;
+    right: 20px;
+}
+
+.header {
+  background-color: #fff;
+  width: 806px;
+  margin: auto;
+  left: 10px;
+  position: relative;
+    min-height: 150px;
+}
+
+.links {
+    position: absolute;
+    bottom: 2px;
 }

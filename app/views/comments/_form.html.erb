@@ -1,6 +1,6 @@
 <%= form_for [@post, @post.comments.build] do |f| %>
     <p>
-        <%= f.text_field :body, placeholder: "Napisz coś" %>
-        <%= f.button :submit %>
+        <%= f.text_field :body, placeholder: "Napisz coś" %></br>
+        <%= f.button "Skomentuj", class: "btn btn-info" %>
     </p>
 <% end %>

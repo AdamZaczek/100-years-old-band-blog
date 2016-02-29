@@ -1,14 +1,25 @@
+
+
+<div class="header">
 <div class="row">
-    <div class="col-xs-3 col-md-2"></div>
-    <div class='title col-xs-9 col-md-3'>
+    <div class='title col-xs-12 col-md-3'>
         <%= link_to "Orkiestra OSP Kurowice", root_path, class: "h1" %>
     </div>
-    <div class="topmenu col-xs-12 col-md-5">
-        <%= link_to 'Strona główna', landing_path, class: "glyphicon glyphicon-home" %></li>
+    <div class="topmenu col-xs-12 col-md-9">
+        <div class="face"><div class="fb-page" data-href="https://www.facebook.com/orkiestrakurowice/?fref=ts" data-width="290" data-height="70" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/orkiestrakurowice/?fref=ts"><a href="https://www.facebook.com/orkiestrakurowice/?fref=ts">Orkiestra OSP Kurowice</a></blockquote></div></div></div></br>
+        <div class="links">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        Galeria <b class=" glyphicon glyphicon-film"></b>
+        </a>
+        <ul class="dropdown-menu">
+        <%= link_to "Zdjęcia", gallery_path, class: "glyphicon glyphicon-picture" %>
+        <%= link_to "Nagrania", '#', class: "glyphicon glyphicon-facetime-video" %>
+            </ul>
         <%= link_to "Aktualności", posts_path, class: "glyphicon glyphicon-music" %></li>
-        <%= link_to "Galeria", gallery_path, class: "glyphicon glyphicon-picture" %></li>
-        <%= link_to "Zespół", members_path, class: "glyphicon glyphicon-eye-open" %></li>
-        <%= link_to "Kontakt", contact_path, class: "glyphicon glyphicon-envelope" %></li>
-        <%= link_to "Dołącz do nas!", join_path, class: "glyphicon glyphicon-plus" %></li>
+        <%= link_to "Zespół", members_path, class: "glyphicon glyphicon-eye-open" %>
+        <%= link_to "Kontakt", contact_path, class: "glyphicon glyphicon-envelope" %>
+        <%= link_to "Dołącz do Nas!", join_path, class: "glyphicon glyphicon-plus" %>
+        </div>
     </div>
+</div>
 </div>
