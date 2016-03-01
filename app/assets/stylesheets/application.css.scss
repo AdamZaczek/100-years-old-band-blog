@@ -10,9 +10,6 @@
  
 @import 'normalize';
 
-html {
- background-color: #FFFFEE;
-}
 
 a {
   color: #cc4444
@@ -20,7 +17,7 @@ a {
 
 a:focus,
 a:hover {
-  color: #ee5555
+  color: #ff751a;
 }
 
 /* Custom default button */
@@ -45,7 +42,7 @@ p {
 }
 
 h1:hover { 
-    color: #CC0033;
+    color: #ff751a
 }
 
 h1 {
@@ -87,7 +84,6 @@ img {
 
 
 .body-wrapper {
-    display: table-cell;
     vertical-align: middle;
         display: table;
     margin: auto;
@@ -96,7 +92,6 @@ img {
     font-family: "Verdana", Geneva, sans-serif;
     font-size: 12px;
     line-height: 18px;
-    color: #333333;
 }
 
 .footer {
@@ -147,7 +142,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 
 .underimg {
-    position: absolute no-repeat scroll center top transparent;
+    position: absolute no-repeat scroll center top;
     position: absolute; 
 }
 
@@ -167,6 +162,7 @@ border-top-color: #683501
 
 .title {
     display: inline-block;
+    margin-bottom: 8px;
 }
 
 #img {
@@ -200,4 +196,26 @@ border-top-color: #683501
 .links {
     position: absolute;
     bottom: 2px;
+    margin-bottom: 8px;
+}
+
+
+body, .row {
+    background-color: #f2f2f2;
+}
+
+.well {
+    background-color: #ecf2f8;
+}
+
+.footer {
+    background-color: #e6e6e6;
+}
+
+.well {
+    background-color: #ecf2f8;
+}
+
+.footer {
+    background-color: #e6e6e6;
 }
