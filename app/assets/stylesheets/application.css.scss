@@ -12,12 +12,12 @@
 
 
 a {
-  color: #cc4444
+  color: #001a33;
 }
 
 a:focus,
 a:hover {
-  color: #ff751a;
+  color: #4d4dff;
 }
 
 /* Custom default button */
@@ -31,11 +31,16 @@ a:hover {
 }
 
 h1 {
-    color: #FF3300;
+    color: #001a33;
 }
 
 .h1 {
-	color: #c00;;font-family: 'Bitter', serif; font-size: 50px; font-weight: normal; line-height: 54px; margin: 0 0 54px; }
+	color: #004466;
+	;font-family: 'Bitter', serif; font-size: 50px; 
+	font-weight: normal; 
+	line-height: 54px; 
+	margin: 0 0 54px; 
+}
 
 p {
     color: #000;
@@ -132,7 +137,6 @@ h2 a:hover {
 a {
     height: 14px;
     display: inline-block;
-    color: #E80000;
     margin: 10px;
 }
 

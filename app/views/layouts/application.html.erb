@@ -5,18 +5,25 @@
           <%= stylesheet_link_tag    'application', media: 'all' %>
           <%= javascript_include_tag 'application' %>
           <link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Allerta' rel='stylesheet' type='text/css'>
+          <link href='http://fonts.googleapis.com/css?family=Allerta' rel='stylesheet' type='text/css'>
           <%= csrf_meta_tags %>
     </head>
-<body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <body>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.5";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="row">
+        <div class="col-xs-12">
+            <%= render '/layouts/flash', flash: flash %>
+        </div>
+    </div>
     <%= render '/layouts/nav' %>
     <div class="images">
   		<%= image_tag "band.jpg", id: "img" %>
@@ -30,5 +37,5 @@
         </div>
     </div>
     <%= render 'layouts/footer' %>
-</body>
+    </body>
 </html>

@@ -34,6 +34,9 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'normalize-rails'
 
+gem 'capybara'
+
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
@@ -43,6 +46,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.0'
 end
 
 group :development do
