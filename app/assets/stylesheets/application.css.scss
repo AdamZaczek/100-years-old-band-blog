@@ -10,14 +10,27 @@
  
 @import 'normalize';
 
-
 a {
-  color: #001a33;
+    	font-family: 'Cardo','Geneva';
+    	color: #000;
 }
 
 a:focus,
 a:hover {
-  color: #4d4dff;
+  color: #003566;
+}
+
+
+.links a {
+  color: #ffdd99;
+  text-shadow: 0px 1px 3px #ff8533;
+}
+
+.links a:focus,
+.links a:hover,
+.header a:hover,
+.header a:focus{
+  color: #ffa64d;
 }
 
 /* Custom default button */
@@ -31,27 +44,15 @@ a:hover {
 }
 
 h1 {
-    color: #001a33;
+    color: #ffd699;
 }
 
 .h1 {
-	color: #004466;
-	;font-family: 'Bitter', serif; font-size: 50px; 
+	color: #ffdd99;
+	font-family: 'Bitter', serif; font-size: 50px; 
 	font-weight: normal; 
 	line-height: 54px; 
 	margin: 0 0 54px; 
-}
-
-p {
-    color: #000;
-}
-
-h1:hover { 
-    color: #ff751a
-}
-
-h1 {
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 .container {
@@ -65,7 +66,6 @@ textarea {
 #header {
 	padding: 2em 3em;
 	border-bottom: 1px solid #d6dce0;
-	background: #444444;
 	color: #9eafba;
 	p {
 		display: inline;
@@ -100,7 +100,7 @@ img {
 }
 
 .footer {
-  border: 1px solid #550000;
+  border-top: 1px solid #550000;
 }
 
 
@@ -109,13 +109,6 @@ h1, h2, h3, h4, h5 {
 	padding-bottom: 20px;
 }
 
-a:hover {
-	text-decoration: underline;
-}
-
-h2 a:hover {
-	text-decoration: none;
-}
 
 .gallery {
     display: inline-block;
@@ -148,6 +141,10 @@ h1, .h1, h2, .h2, h3, .h3 {
 .underimg {
     position: absolute no-repeat scroll center top;
     position: absolute; 
+}
+
+#top {
+    background-image: asset_url("kosciol.jpg");
 }
 
 .images {
@@ -189,12 +186,11 @@ border-top-color: #683501
 }
 
 .header {
-  background-color: #fff;
   width: 806px;
   margin: auto;
   left: 10px;
   position: relative;
-    min-height: 150px;
+    min-height: 180px;
 }
 
 .links {
@@ -204,8 +200,9 @@ border-top-color: #683501
 }
 
 
-body, .row {
+.row:not(#top2) {
     background-color: #f2f2f2;
+
 }
 
 .well {
@@ -217,9 +214,15 @@ body, .row {
 }
 
 .well {
-    background-color: #ecf2f8;
+    background-color: #fff;
+    max-width: 500px;
 }
 
 .footer {
     background-color: #e6e6e6;
+}
+
+
+.dropdown-menu {
+    background-color: #330000;
 }

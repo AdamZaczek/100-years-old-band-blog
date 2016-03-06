@@ -1,7 +1,7 @@
 <div class="container">
-<p>Komentarz napisano <%= comment.created_at.strftime("%Y-%m-%d") %></p>
+<span>Użytkownik <strong><%= comment.name %></strong> napisał: </span><span style='position: absolute; right: 100px'>Dodano dnia: <%= comment.created_at.strftime("%Y-%m-%d") %></span>
 <div class="comment-container well well-sm">
-Autor:<strong><%= comment.name %></strong></br>
 <p><%= comment.body %></p>
 </div>
 </div>
+

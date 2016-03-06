@@ -24,15 +24,24 @@
             <%= render '/layouts/flash', flash: flash %>
         </div>
     </div>
+    <div id='top'>
     <%= render '/layouts/nav' %>
     <div class="images">
   		<%= image_tag "band.jpg", id: "img" %>
+ 	</div>
  	</div>
   	<div class="row">
   	    <div class="col-xs-0 col-md-2"></div>
         <div class='title col-xs-12 col-md-8'>
   		    <div class="body-wrapper">
+  		          	<div class="row">
+        <div class='title col-xs-9 col-md-9'>
                 <%= yield %>
+            </div>
+        <div class="col-xs-3 col-md-3">
+            <%= render 'layouts/youtube' %>
+        </div>
+    </div>
             </div>
         </div>
     </div>
