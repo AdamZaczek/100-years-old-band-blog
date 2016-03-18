@@ -21,6 +21,7 @@ a:hover {
 }
 
 
+
 .links a {
   color: #ffdd99;
   text-shadow: 0px 1px 3px #ff8533;
@@ -48,8 +49,9 @@ h1 {
 }
 
 .h1 {
-	color: #ffdd99;
+	color: #ffd699;
 	font-family: 'Bitter', serif; font-size: 50px; 
+	text-shadow: 0px 3px 3px #800;
 	font-weight: normal; 
 	line-height: 54px; 
 	margin: 0 0 54px; 
@@ -131,6 +133,7 @@ a {
     height: 14px;
     display: inline-block;
     margin: 10px;
+    font-size: 16px;
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
@@ -186,11 +189,11 @@ border-top-color: #683501
 }
 
 .header {
-  width: 806px;
+  width: 860px;
   margin: auto;
   left: 10px;
   position: relative;
-    min-height: 180px;
+  min-height: 180px;
 }
 
 .links {
@@ -225,4 +228,26 @@ border-top-color: #683501
 
 .dropdown-menu {
     background-color: #330000;
+}
+
+.img {
+    width: 200px;
+    height: 130px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#copywright {
+    background-image: asset_url("kosciol.jpg");
+    color: #ffdd99;
+    text-shadow: 0px 2px 3px #800;
+    font-size: 18px;
+    min-height: 60px;
+    font-family: 'Cardo','Geneva';
+    border-top: 1px solid #550000;
+}
+
+
+.you h4 {
+    padding-bottom: 0px;
 }

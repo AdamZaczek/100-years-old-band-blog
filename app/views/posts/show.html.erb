@@ -1,13 +1,9 @@
-<div class='row'>
-    <div class="col-xs-0 col-md-2"></div>
-    <div class='title col-xs-12 col-md-8'>
-<div class="container", style="padding-bottom: 0px;">
-<h2><%= @post.title %></h2> </br>
-<%= @post.body %> </br>
-		<%= render @post.comments %>
-
-		<h3>Napisz komentarz:</h3>
-		<%= render "comments/form" %>
-</div>
-</div>
+<div class="body-wrapper" style="padding-bottom: 0px; border-bottom: 1px solid #d6dce0; width: 550px">
+	<h2><%= @post.title %></h2> </br>
+	<%= @post.body %> </br>
+	<% if @post.image_url != nil %>
+		<%= image_tag @post.image_url(:thumb).to_s %>
+	<% end %>
+	<%= render @post.comments %>
+	<%= render 'comments/form' %>
 </div>

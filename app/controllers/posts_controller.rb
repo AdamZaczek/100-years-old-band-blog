@@ -56,6 +56,6 @@ private
   end
 
   def allowed_params
-    params.require(:post).permit(:title, :body)
+    params.require(:post).permit(:title, :body, :image)
   end
 end

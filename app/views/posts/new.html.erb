@@ -1,11 +1,11 @@
-<div class="container">
-<%= form_for @post do |f| %>
+<%= form_for @post, :html => {:multipart => true} do |f| %>
     <%= f.label :nazwa %> </br>
     <%= f.text_area(:title, cols: 60, class: "textarea") %> </br>
 
     <%= f.label :tekst %> </br>
     <%= f.text_area(:body, cols: 60, rows: 15, class: "textarea") %> </br>
+    
+    <%= f.file_field :image %> </br>
 
     <%= f.submit "Utwórz post", class: "btn btn-success" %>
 <% end %>
-</div>

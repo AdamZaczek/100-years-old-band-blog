@@ -1,7 +1,11 @@
-    <h2>Aktualności</h2>
+<h2>Aktualności</h2>
 <% @posts.each do |post| %>
     <p>
        <h2><%= link_to post.title, post_path(post) %></h2> </br>
        <%= post.body %>
     </p>
+    <% if post.image_url != nil %>
+	    <%= image_tag post.image_url(:thumb).to_s %>
+	<% end %>
+	<%= render post.comments %> </br>
 <% end %>
