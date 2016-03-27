@@ -1,4 +1,9 @@
-<h4>Galeria</h4>
+<h2>Witamy w naszej galerii</h2>
+<div style="padding-left: 25px">
 <% @photos.each do |photo| %>
-  <%= image_tag photo.photo_url(:thumb).to_s, style: "margin-bottom: 10px" %>
+    <a class="example-image-link" href="
+    <%= photo.photo_url.to_s %>" data-lightbox: "gal" >
+    <%= image_tag photo.photo_url(:gall).to_s, 
+    style: "margin-bottom: 250px;", class: "example-image" %></a>
 <% end %>
+</div>

@@ -1,8 +1,7 @@
 <div class="you">
-    <%= link_to "Zdjęcia", gallery_path, class: "h3" %>
+    <%= link_to "Zdjęcia", photos_path, class: "h3" %>
     <div>
-        <p>Zdj</p>  
-        <%= image_tag "1917.jpg", class: "img" %> 
+        <%= link_to image_tag("1917.jpg", :class => 'img'), photos_path %> 
     </div>
     
     <%= link_to "Nagrania", gallery_path, class: "h3" %>

@@ -1,14 +1,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import 'normalize';
+@import "lightbox";
 
 /*
 *= require normalize-rails
+*= require lightbox
 *= require_self
 *= require_tree .
 
  */
- 
-@import 'normalize';
+
 
 a {
     	font-family: 'Cardo','Geneva';
@@ -32,6 +34,7 @@ a:hover {
 .header a:hover,
 .header a:focus{
   color: #ffa64d;
+      text-decoration: none;
 }
 
 /* Custom default button */
@@ -54,7 +57,11 @@ h1 {
 	text-shadow: 0px 3px 3px #800;
 	font-weight: normal; 
 	line-height: 54px; 
-	margin: 0 0 54px; 
+	margin: 0 0 54px;
+}
+
+a .h1 {
+        text-decoration: none;
 }
 
 .container {
@@ -234,7 +241,7 @@ border-top-color: #683501
     width: 200px;
     height: 130px;
     padding: 0px;
-    margin: 0px;
+    margin-bottom: 100px;
 }
 
 #copywright {

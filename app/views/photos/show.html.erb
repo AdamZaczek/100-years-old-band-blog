@@ -1,1 +1,1 @@
-<%= image_tag @photo.photo_url(:thumb).to_s %>
+<a href="<%= image_tag @photo.photo_url.to_s %>" data-lightbox="gal"><%= image_tag @photo.photo_url(:thumb).to_s %></a>
