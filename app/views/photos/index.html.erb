@@ -1,0 +1,4 @@
+<h4>Galeria</h4>
+<% @photos.each do |photo| %>
+  <%= image_tag photo.photo_url(:thumb).to_s, style: "margin-bottom: 10px" %>
+<% end %>

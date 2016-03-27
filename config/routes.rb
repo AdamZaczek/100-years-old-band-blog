@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :posts do
     resources :comments
   end
+  resources :photos
   
   
   get 'landing' => 'band#landing', :as => :landing
