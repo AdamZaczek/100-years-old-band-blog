@@ -1,4 +1,5 @@
 class PhotosController < ApplicationController
+  http_basic_authenticate_with name: 'x', password: 'x', except: [:index, :show]
     
   def new
     @photo = Photo.new

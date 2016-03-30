@@ -1,0 +1,10 @@
+<h2>Aktualności</h2>
+<% @chronicles.each do |chronicle| %>
+    <p>
+       <h2><%= link_to chronicle.title, chronicle_path(chronicle) %></h2> </br>
+       <%= chronicle.body %>
+    </p>
+    <% if chronicle.image != nil %>
+	    <%= image_tag chronicle.image_url(:thumb).to_s %>
+	<% end %>
+<% end %>

@@ -1,0 +1,7 @@
+<div class="body-wrapper" style="padding-bottom: 0px; border-bottom: 1px solid #d6dce0; width: 550px">
+	<h2><%= @chronicle.title %></h2> </br>
+	<%= @chronicle.body %> </br>
+	<% if @chronicle.image_url != nil %>
+		<%= image_tag @chronicle.image_url(:thumb).to_s %>
+	<% end %>
+</div>
